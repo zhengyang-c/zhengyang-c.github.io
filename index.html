@@ -9,6 +9,11 @@
         <!-- Favicon-->
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/c795fbdb10.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -17,9 +22,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!" onclick = "scroll_home()"><i class="fas fa-question-circle"></i> About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#!" onclick = "scroll_project()"><i class="fas fa-wrench"></i> Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#!" onclick = "scroll_contact()"><i class="fas fa-address-book"></i> Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,7 +35,14 @@
             <div class="text-center my-5">
                 <img class="img-fluid rounded-circle mb-4 shadow-lg" src="https://dummyimage.com/150x150/6c757d/dee2e6.jpg" alt="..." />
                 <h1 class="text-white fs-3 fw-bolder">Zheng Yang <u>Choong</u></h1>
-                <p class="text-white mb-0 ">Programmer and Physicist (in training)</p>
+                <p class="text-white mb-0 ">Programmer and Physicist (in training) | Singapore <i class="fas fa-globe-asia"></i></p>
+                <br/>
+<a href = "https://github.com/zhengyang-c/" target = "_blank">
+                <button type="button" class="btn btn-primary"><i class="fab fa-github"></i> GitHub (School)</button>
+</a>
+<a href = "https://github.com/zhengyangchoong" target = "_blank">
+                <button type="button" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub (Personal)</button>
+</a>
             </div>
         </header>
         <!-- Content section-->
@@ -38,35 +50,57 @@
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <h1>Welcome!</h1>
-                        <p class="mb-0">I'm currently an undergrad reading Physics at Nanyang Technological University, Singapore. I enjoy reading non-fiction and playing the piano. </p>
+                        <h1 id = "home">Welcome!</h1>
+                        <p class="lead">I'm currently an undergrad reading Physics at Nanyang Technological University, Singapore. I enjoy reading non-fiction and playing the piano. </p>
 
                         <p class ="mb-0"> Below, I document and share some of the projects I've worked on. My contact information is below as well!
                         </p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Image element - set the background image for the header in the line below-->
-        <!-- Content section-->
-        <section class="py-5">
-            <div class="container my-5">
+             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <h2>Engaging Background Images</h2>
-                        <p class="lead">The background images used in this template are sourced from Unsplash and are open source and free to use.</p>
-                        <p class="mb-0">I can't tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.</p>
+                        <h1 id = "projects">Projects</h1>
+                        <h3 class = 'project-title'>Seismology and Machine Learning for the Aceh region in Indonesia</h3>
+                        <h3 class = 'project-title'>Designing a Cell-Counting Microscope</h3>
+                        <h3 class = 'project-title'>Building a sub-nanometre resolution grating monochromator</h3>
+                        <h3 class = 'project-title'>Measuring Temporal Coherence of Light from a Mercury Vapour Lamp</h3>
+                        <h3 class = 'project-title'>Poetry</h3>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">&copy; Zheng Yang</p></div>
-        </footer>
+             <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h1 id = "contact">Contact</h1>
+
+                            Feel free to drop me an email at
+
+                            zchoong001 [at] e.ntu.edu.sg
+                    </div>
+                </div>
+            </div>
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    Zheng Yang © 2021 Copyright
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+
+
     </body>
 </html>

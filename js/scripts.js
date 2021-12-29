@@ -17,3 +17,16 @@ document.addEventListener("DOMContentLoaded",function(){
   a.style.backgroundImage = "url(assets/splash.jpg)";
 
 })
+
+function scroll_home(){
+  var target = document.getElementById('home');
+  target.scrollIntoView();
+}
+function scroll_project(){
+  var target = document.getElementById('projects');
+  target.scrollIntoView();
+}
+function scroll_contact(){
+  var target = document.getElementById('contact');
+  target.scrollIntoView();
+}
