@@ -22,6 +22,10 @@ function scroll_home(){
   var target = document.getElementById('home');
   target.scrollIntoView();
 }
+function scroll_work(){
+  var target = document.getElementById('work');
+  target.scrollIntoView();
+}
 function scroll_project(){
   var target = document.getElementById('projects');
   target.scrollIntoView();

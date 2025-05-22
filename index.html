@@ -23,7 +23,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!" onclick = "scroll_home()"><i class="fas fa-question-circle"></i> About</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#!" onclick = "scroll_project()"><i class="fas fa-wrench"></i> Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#!" onclick = "scroll_work()"><i class="fas fa-briefcase"></i> Professional Experience</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#!" onclick = "scroll_project()"><i class="fas fa-flask"></i> Projects</a></li>
                         <li class="nav-item"><a class="nav-link active" href="#!" onclick = "scroll_contact()"><i class="fas fa-address-book"></i> Contact</a></li>
                     </ul>
                 </div>
@@ -42,7 +43,7 @@
                 <br />
                 <br />
                 <h1 class="text-white fs-3 fw-bolder">Zheng Yang <u>Choong</u></h1>
-                <p class="text-white mb-0 ">Programmer and Physicist | Singapore <i class="fas fa-globe-asia"></i></p>
+                <p class="text-white mb-0 ">Quantitative Researcher | Physicist | Programmer | Singapore <i class="fas fa-globe-asia"></i></p>
                 <br />
 <a href = "https://github.com/zhengyang-c/" target = "_blank">
                 <button type="button" class="btn btn-primary"><i class="fab fa-github"></i> GitHub (School)</button>
@@ -51,6 +52,10 @@
                 <button type="button" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub (Personal)</button>
 </a>
                 <br/>
+                <br/>
+                <a href = "https://www.linkedin.com/in/zheng-yang-choong/" target = "_blank">
+                <button type="button" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</button>
+</a>
                 <br />
                 <br />
                 <i class="fas fa-chevron-circle-down nav-chevron" onclick = "scroll_home()"></i>
@@ -63,7 +68,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <h1 id = "home">Welcome!</h1>
-                        <p class="lead">I'm a final-year undergrad reading Physics at Nanyang Technological University (NTU), Singapore. I enjoy reading non-fiction and playing the piano. I also write poetry. </p>
+                        <p class="lead">I'm a Physics graduate from Nanyang Technological University (NTU), Singapore. I recently worked in quantitative research and continue to explore problems at the intersection of science, computation, and finance. Outside of work, I enjoy reading non-fiction, playing the piano, and writing poetry.</p>
 
                         <p class ="mb-0"> Below, I document and share some of the projects I've worked on. My contact information is available below as well!
                         </p>
@@ -73,66 +78,97 @@
              <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
+                        <h1 id = "work">Professional Experience</h1>
+                        <h3 class = 'project-title'>Quantitative Researcher (Statistical Arbitrage)</h3>
+                        <p class = "fw-bold d-inline">Cubist Systematic Strategies (Point72)
+                        </p>
+                        <br /><em>US and APAC Equities</em> 
+                        <p class = 'float-end my-date'>June 2024 - May 2025</p><br />
+                        This role gave me hands-on experience with rigorous and fast-paced alpha research workflows and validated my interest in the intersection of data science and finance. <br/><br/>
+                        Conducted alpha research on large alternative equity datasets, performing extensive data validation and diagnostics to ensure signal reliability. <br/><br/>
+                        Collaborated with senior researchers to productionise backend trading processes in APAC, implementing rigorous data health and quality controls.<br /><br/>
+                        Onboarded and documented proprietary datasets (Equity, Macro, Fixed Income, Alternative Data), enabling efficient reuse and analysis within the team. <br /><br />
+                        Contributed to extending the core Python research library, enhancing workflow speed and reproducibility for signal development. <br />
+
+
+                         <h3 class = 'project-title project-o'>Quantitative Development Intern</h3>
+                        <p class = "fw-bold d-inline">Astignes Capital Asia</p>
+                        <p class = 'float-end my-date'>May 2022 - August 2022</p><br />
+                        Implemented a novel risk regime indicator using timeseries data. Experimented with methods such as Hidden Markov Models and Gaussian Mixture Models to quantify regime changes and its implications for firm risk.
+                        <br /><br /> Translated regime information into trading signals via Genetic Algorithms, calibrating a model in a high-dimensional parameter space to derive effective heuristics. 
+                        <br /><br /> Designed, maintained, and deployed an in-house dashboard in Plotly Dash for data visualisation with automatic daily updates, enhancing user interactivity and daily risk-monitoring.
+
+                        <br /><br />
+                    </div>
+                </div>
+            </div>
+             <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
                         <h1 id = "projects">Projects</h1>
-                        <h3 class = 'project-title'>Senior Honours Project</h3>
-                        <p class = "fw-bold d-inline">Nanyang Technological University<br/>School of Physical and Mathematical Sciences</p>
-                        <p class = 'float-end my-date'>June 2023 - Present</p><br />
+                        <h3 class = 'project-title'>Senior Honours Thesis</h3>
+                        <p class = "fw-bold d-inline">Nanyang Technological University</p>
+                        <br/><em>School of Physical and Mathematical Sciences</em>
+                        <p class = 'float-end my-date'>June 2023 - April 2024</p><br />
                         <br/>
-                        <em>Investigating and proposing a modification to models of neutrino mass generation</em>
+                        <code>Investigating neutrino masses in supersymmetric GUT extensions of the Standard Model</code>
                         <br/><br/>
 
-                        Since the 5σ detection of the Higgs boson in 2012, the Standard Model of Physics was completed. Although it is the most predictive theory in physics to date, there are reasons to believe that it is incomplete. Neutrinos are extremely light and weakly interacting particles. However, the Standard Model predicts that neutrinos are massless. Thus, new physics beyond the Standard Model is required to explain why neutrinos have mass. <br /><br />
+                        The Standard Model of particle physics is the crowning achievement of modern science, providing a fundamental and complete description of the nature of matter, fields and their interactions. In 2012, the 5σ detection of the Higgs boson at CERN provided the last experimental verification for the Standard Model.
+                        <br/><br/>
+                        However, the Standard Model does not provide an appealing explanation for the phenomena of non-zero neutrino masses. In fact, the Standard Model is perfectly compatible with massless neutrinos. The discovery of non-zero neutrino mass via neutrino oscillations hence provides a window into Beyond Standard Model (BSM) physics, demanding new frameworks to explain how neutrino masses might fit in a unified framework.
+                        <br /><br />
+                        In this thesis, we explore models that explain the neutrino mass and mixing matrices. We first do so by extending the Standard Model framework to incorporate neutrino mass generation mechanisms. We then investigate the Left-Right Symmetric Model (LRSM), which unifies the left- and right-handed fields, as well the supersymmetric (SUSY) Grand Unified SU(5), which unifies the gauge coupling constants at a high energy scale. Original contributions of this thesis includes model construction at the LRSM scale for neutrino masses, as well as model construction for the neutrino mass mixing matrix in the SUSY SU(5) framework. Additionally, explicit calculations involving the irreducible representations of the SU(5) group are presented.
+                        <br /><br />
 
-                        In 1975, an extension named the Left-Right Symmetric Model (LRSM) was proposed by Mohapatra et al., addressing the aesthetic limitations of the Standard Model by proposing a deeper symmetry of nature. This also offers new avenues and directions from which we can propose a neutrino mass generation mechanism. <br /><br />
-
-                        This theoretical project in Quantum Field Theory hence aims to study how the LRSM is able to generate finite neutrino masses, before proposing extensions to current models. 
+                        My thesis is available <a href="https://docs.google.com/viewer?url=https://zhengyang-c.github.io/assets/thesis.pdf" target="_blank"> here</a>.
                         <br /><br />
 
                         <h3 class = 'project-title'>Research Assistant</h3>
-                        <p class = "fw-bold d-inline">University of Edinburgh<br/>Topologically Active Polymers (TAP) Lab</p>
-                        <p class = 'float-end my-date'>May 2023 - Present</p><br />
+                        <p class = "fw-bold d-inline">University of Edinburgh</p>
+                        <br/><em>Topologically Active Polymers (TAP) Lab</em>
+                        <p class = 'float-end my-date'>May 2023 - Nov 2023</p><br />
                         Designed and performed 3D molecular dynamics simulations in LAMMPS, using a python pipeline and a supercomputing cluster in order to elucidate the temporal and spatial dynamics of Structural Maintenance of Chromosome (SMC)-proteins moving on linear DNA. <br/><br/>
                         Performed statistical analysis with the goal of connecting simulation results to <em>in vitro</em> and <em>in vivo</em> observations in collaboration with an experimental lab.
                         <br /><br />
                                 
                         <h3 class = 'project-title'>Department of Weather Research Intern</h3>
-                        <p class = "fw-bold d-inline">Meteorlogical Service Singapore</p>
+                        <p class = "fw-bold d-inline">National Environmental Agency</p>
+                        <br/><em>Meteorological Service Singapore</em>
                         <p class = 'float-end my-date'>Oct 2022 - Dec 2022</p><br />
                         Validated in-house ocean and sea surface wind model data against leading meteorological models, evaluating the temporal and spatial distribution of L1 error across several geophysical quantities. Model data was validated against satellite altimetry data, as well as in-situ buoy observations. <br /><br />
                         Developed a operational pipeline for retrieving and plotting published wave model data for public-facing purposes. 
 
-                        <h3 class = 'project-title project-o'>Quantitative Development Intern</h3>
-                        <p class = "fw-bold d-inline">Astignes Capital Asia Pte. Ltd.</p>
-                        <p class = 'float-end my-date'>May 2022 - Aug 2022</p><br />
-                        Implemented a novel risk regime indicator using timeseries data. Experimented with methods such as Hidden Markov Models and Gaussian Mixture Models to quantify regime changes and its implications for risk.
-                        <br /><br /> Translated regime information into trading signals by using Genetic Algorithms (GA). GA was used to explore a large (3<sup class ="d-inline">25</sup>) parameter space to obtain an optimal set of heuristics. 
-                        <br /><br /> Designed, maintained, and deployed an in-house dashboard in Plotly Dash for data visualisation with automatic daily updates, enhancing user interactivity and data exploration. 
+                       
 
                         <h3 class = 'project-title project-o'>Seismology and Machine Learning for the Aceh region in Indonesia</h3>
                         <p class = "fw-bold d-inline">Earth Observatory Singapore</p>
+                        <br /><em>Nanyang Technological University</em>
                         <p class = 'float-end my-date'>Dec 2020 - May 2022</p><br />
                         <a class = 'link-primary float-start' href="https://github.com/zhengyang-c/cy1400-eqt/" target = "_blank"><i class="fab fa-github blackiconcolor"></i> GitHub </a>
                         <br/>
 
-                        Tested and retrained a recently published CNN, <a href ="https://github.com/smousavi05/EQTransformer" target="_blank">EQTransformer</a>, on a new ~100 TB dataset from Aceh, Indonesia, with the goal of micro-earthquake detection, and modelling of the seismic properties of this highly active region. 
+                        Adapted and retrained a recently published model (Convolutional Neural Network), <a href ="https://github.com/smousavi05/EQTransformer" target="_blank">EQTransformer</a>, on ~100 TB of seismic data Aceh, Indonesia, with the goal of micro-earthquake detection, and modelling of the seismic properties of this highly active region. 
                         <br /><br />Performed earthquake association and relocation, and verified the robustness of EQTransformer detections through bootstrapping and Monte Carlo methods. Conducted descriptive statistics on the seismicity and magnitude-frequency distribution of this region, setting the groundwork for future fault modelling.
                         <br /><br />
                         Developed a Python pipeline for use with a super-computing cluster, along with data processing and plotting tools.
 
 
                         <h3 class = 'project-title project-o'>Designing a Cell-Counting Microscope</h3>
-                        <p class = "fw-bold d-inline">Nanyang Technological University, School of Physical and Mathematical Sciences</p>
+                        <p class = "fw-bold d-inline">Nanyang Technological University</p>
+                        <br/><em>School of Physical and Mathematical Sciences</em>
                         <p class = 'float-end my-date'>May - Jul 2021</p>
                         <br/>
                         <a class = 'link-primary' href="https://github.com/zhengyangchoong/cy2003-cellcounting/" target = "_blank"><i class="fab blackiconcolor fa-github"></i> GitHub</a> &nbsp;
                         <a class = 'link-primary' href="https://blogs.ntu.edu.sg/ps9888-2021-g18/" target = "_blank"><i class="fab blackiconcolor fa-blogger"></i> Project Blog</a>
 
-                        <br/>Designed and tested a cell counting microscope, with mechanical motion control and automated focusing. Cell counting was accomplished using the OpenCV library. Wrote an accompanying web interface in Flask. Tested and experimented with a TensorFlow CNN model, though it turned out that blob detection was more performant. 
+                        <br/>Designed and tested a cell counting microscope, with mechanical motion control and automated focusing. Cell counting was accomplished using the OpenCV library. Wrote an accompanying web interface in Flask. Tested and experimented with a TensorFlow Convolutional Neural Network model, though it turned out that blob detection was more performant. 
 
                         <br /><br />Our pipeline achieved ~90% accuracy in both synthetic and real-life tests. 
 
 
-                        <h3 class = 'project-title project-o'>Science Research Programme @ National University of Singapore</h3>
+                        <h3 class = 'project-title project-o'>Science Research Programme</h3>
+                        <p class = "fw-bold d-inline">National University of Singapore and Hwa Chong Institution</p>
                         <p class = 'float-end my-date'>2016</p>
                         <br />
                         <p>
@@ -146,7 +182,10 @@
 
 
                         <h3 class = 'project-title project-o'>photonLauncher</h3>
+                        <p class = "fw-bold d-inline">Hwa Chong Institution</p>
+                        <br/>
                         <a class = 'link-primary' href="https://github.com/sunjerry019/photonLauncher" target = "_blank"><i class="fab blackiconcolor fa-github"></i> GitHub</a>
+                        
                         <p class = 'float-end my-date'>2015 - 2016</p>
 
                         <p>
@@ -187,7 +226,7 @@
 
                             My resume is also available <a href="https://docs.google.com/viewer?url=https://zhengyang-c.github.io/assets/resume.pdf" target="_blank"> here</a>.
 
-                            <br /><br />Last updated: 4 August 2023
+                            <br /><br />Last updated: 22 May 2025
                     </div>
                 </div>
             </div>
